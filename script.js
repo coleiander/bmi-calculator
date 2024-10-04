@@ -17,7 +17,6 @@ function unitToggle(){
 
 btn.addEventListener('click',calculateBMI);
 btn.addEventListener('click',changeMenu);
-btn.addEventListener('click',play);
 
 
 function changeMenu(){
