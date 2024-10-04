@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+    <link rel="icon" href="img/icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>BMI calculator</h1>
+        </div>
+        <div class="dropdown-wrapper">
+            <select id="unit" onchange="unitToggle()">
+                <option value="metric">metric(kg/cm)</option>
+                <option value="imperial">imperial(lbs/in)</option>
+            </select>
+        </div>
+    </header>
+    <main>
+        <div class="calc-cont" id="calc-cont">
+            <div class="weight-input">
+                <label for="weight">weight:</label><input type="number" name="weight" id="weight"></input><span id="w-unit">kg</span>
+            </div>
+            <div class="height-input">
+                <label for="height">height:</label><input type="number" name="height" id="height"></input><span id="h-unit">cm</span>
+            </div>
+            <div ><button class="calc-btn" id="btn" onclick="calculateBMI()">calculate</button></div>
+        </div>
+        <div class="results" id="results"  >
+            <h3>Your BMI is:</h3>
+            <h1 id="bmi"></h1>
+            <h2>You're <span id="bmi-cat"></span>!</h2>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

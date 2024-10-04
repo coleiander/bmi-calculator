@@ -1,0 +1,157 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    text-align:center;
+    background-color:black;
+    background-image: url(img/colors.png);
+    background-size: cover;
+    font-family: 'Jetbrains Mono',monospace;
+    font-size: 1rem;
+    color:white;
+    
+}
+h1{
+    font-weight: 500;
+}
+header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 15px;
+}
+
+.dropdown-wrapper{
+    border:solid 1.5px white;
+    border-radius: 25px;
+    padding:8px 12px;
+    font-family: 'Ubuntu Mono',monospace;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    
+}
+.dropdown-wrapper select{
+    transition:all 0.2s ease-in-out; 
+}
+.dropdown-wrapper select:hover{
+    font-size: 1.22rem;   
+}
+
+select{
+    font-family: 'Ubuntu Mono',monospace;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border:0px;
+    -webkit-appearance: caret;
+    appearance:caret;
+}
+
+select > option{
+    background-color: rgba(0,0,0,0);
+}
+
+option {
+    color:black;
+    
+  }
+
+main{
+    padding-top:1.8rem;
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    align-content: center;
+}
+.calc-cont, .results {
+    display:flex;
+    justify-items: center;
+    flex-flow:column nowrap;
+    gap:2rem;
+    background-color: #4e514e3d;
+    padding:50px 40px;
+    border-radius:22px; 
+    width:350px;
+    height:fit-content;
+    transition: all ease-in 0.2s;
+}
+
+
+.results{
+    display:none;
+    
+}
+
+.results h1{
+    font-size: 3rem;
+    
+}
+
+.results > * {
+    margin:0px;
+}
+
+.calc-cont input{
+    width:69%;
+    padding:10px 35px 10px 2px;
+    border:solid 0px;
+    background-color: rgba(0, 0, 0, 0.306);
+    border-radius: 0px 22px 22px 0px;
+    color:white;
+    font-family: 'Jetbrains Mono';
+    
+}
+.calc-cont input:focus{
+    outline: none;
+    box-shadow:0px 0px 3px white;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield; 
+}
+
+
+div label{
+    padding:7.5px 4px 7.5px 12px;
+    border:solid 0px;
+    background-color: rgba(0, 0, 0, 0.708);
+    border-radius: 22px 0px 0px 22px;
+}
+
+.calc-btn{
+    font-family:'Jetbrains Mono' ;
+    font-size:0.9rem;
+    border: solid 0px;
+    background-color: rgba(0, 0, 0, 0.708);
+    padding: 8px 15px;
+    color:white;
+    border-radius:22px;
+    transition: all 0.2s ease-in;
+}
+
+.calc-btn:hover{
+    font-size:1rem;
+}
+
+.calc-cont span {
+    position:absolute;
+    margin-left: -40px;
+    margin-top:7px;
+}
+
+.weight-input, .height-input{
+    margin-left:-10px;
+}
